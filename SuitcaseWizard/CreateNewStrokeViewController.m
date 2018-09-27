@@ -20,6 +20,8 @@
 #import "PlayMethodViewController.h"
 #import "CityListModel.h"
 
+#define DELAY 500000000
+
 @interface CreateNewStrokeViewController ()<UITableViewDelegate,UITableViewDataSource,returnWithArrayDelegate,SW_GetTextContentDelegate,UITextFieldDelegate>
 /* tableView */
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
