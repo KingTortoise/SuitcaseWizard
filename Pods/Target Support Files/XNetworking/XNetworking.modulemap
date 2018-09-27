@@ -1,0 +1,6 @@
+framework module XNetworking {
+  umbrella header "XNetworking-umbrella.h"
+
+  export *
+  module * { export * }
+}

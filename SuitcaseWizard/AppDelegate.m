@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "WizardHomeViewController.h"
+#import "XNServerSW.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +18,19 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    [XNServerConfiguraion shareInstance].defaultServer = [XNServerSW sharedInstance];
+    self.manager = [IQKeyboardManager sharedManager];
+    _manager.enable = YES;
+    _manager.shouldResignOnTouchOutside = YES;
+    _manager.shouldToolbarUsesTextFieldTintColor = YES;
+    _manager.enableAutoToolbar = NO;
+    
+    WizardHomeViewController *viewController = [[UIStoryboard storyboardWithName:@"WizardHome" bundle:nil]instantiateInitialViewController];
+    RTRootNavigationController *rootViewController1 = [[RTRootNavigationController alloc]initWithRootViewController:viewController];
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    _window.rootViewController = rootViewController1;
+    _window.backgroundColor = [UIColor whiteColor];
+    [_window makeKeyAndVisible];
     return YES;
 }
 

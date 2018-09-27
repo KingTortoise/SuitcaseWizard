@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="WLc-e3-Aw3">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Play Method View Controller-->
+        <scene sceneID="lVi-2Y-uqd">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="WLc-e3-Aw3" customClass="PlayMethodViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tOQ-9T-XzH"/>
+                        <viewControllerLayoutGuide type="bottom" id="Bap-sy-Okb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pnF-aY-dKp">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3kq-wN-qPS">
+                                <rect key="frame" x="16" y="8" width="343" height="200"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="ctM-ng-iRn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="还可以输入200个汉字" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="miB-q0-Lo4">
+                                <rect key="frame" x="228.5" y="216" width="130.5" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.22352941179999999" green="0.22352941179999999" blue="0.22352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94117647059999998" green="0.93725490199999995" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="3kq-wN-qPS" secondAttribute="trailing" constant="16" id="U6c-QR-xDI"/>
+                            <constraint firstItem="3kq-wN-qPS" firstAttribute="leading" secondItem="pnF-aY-dKp" secondAttribute="leading" constant="16" id="dWA-id-IX1"/>
+                            <constraint firstItem="3kq-wN-qPS" firstAttribute="top" secondItem="tOQ-9T-XzH" secondAttribute="bottom" constant="8" id="eTv-TE-tgD"/>
+                            <constraint firstItem="miB-q0-Lo4" firstAttribute="top" secondItem="3kq-wN-qPS" secondAttribute="bottom" constant="8" id="mXb-Gd-TYy"/>
+                            <constraint firstAttribute="trailing" secondItem="miB-q0-Lo4" secondAttribute="trailing" constant="16" id="tmE-Zb-oRY"/>
+                        </constraints>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <connections>
+                        <outlet property="contentTextView" destination="3kq-wN-qPS" id="psf-Jv-cmj"/>
+                        <outlet property="remaining" destination="miB-q0-Lo4" id="OoN-YK-4rz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tcr-7m-U78" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-34.399999999999999" y="224.4377811094453"/>
+        </scene>
+    </scenes>
+</document>

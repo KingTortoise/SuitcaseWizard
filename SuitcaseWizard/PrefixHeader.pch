@@ -1,0 +1,27 @@
+//
+//  PrefixHeader.pch
+//  SuitcaseWizard
+//
+//  Created by 金文武 on 17/3/6.
+//  Copyright © 2017年 金文武. All rights reserved.
+//
+
+#ifndef PrefixHeader_h
+#define PrefixHeader_h
+
+#import "RTRootNavigationController.h"
+#import "UIViewController+UIAdapter.h"
+#import "UIViewController+Remind.h"
+#import "MBProgressHUD+NJ.h"
+#import "Define.h"
+#import "Macro.h"
+#import <XNetworking/XNetworking.h>
+#import <ReactiveCocoa/ReactiveCocoa.h>
+#import "ObjectToDic.h"
+#import <XNetworking/XNServerConfiguraion.h>
+#import <MJRefresh/MJRefresh.h>
+#import <IQKeyboardManager/IQKeyboardManager.h>
+#import "UITableView+FDTemplateLayoutCell.h"
+#import "UIImageView+WebCache.h"
+
+#endif /* PrefixHeader_h */
